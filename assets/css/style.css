@@ -1,7 +1,9 @@
+/* color scheme sourced from http://khroma.co/generator/ */
 :root {
     --akaroa: #D9C7B6;
     --cloud-burst: #212853;
     --orange: #ff7c00;
+    --gin: #e0eae4;
 }
 
 * {
@@ -18,7 +20,21 @@ header {
     background-color: var(--cloud-burst);
     color: var(--akaroa);
     justify-content: space-between;
-    /* padding: 12px; */
+    padding: 12px;
+}
+
+.main-image {
+    background: var(--akaroa);
+    overflow: hidden;
+    padding: 0;
+}
+
+img {
+    object-fit: cover;
+    padding: 0;
+    opacity: 0.7;
+    width: 100%;
+    max-height: 200px;
 }
 
 h1, h2 {
@@ -26,7 +42,7 @@ h1, h2 {
 }
 
 h1 {
-    color: white;
+    color: whitesmoke;
 }
 
 h2 {
