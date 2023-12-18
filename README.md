@@ -6,7 +6,7 @@ This portfolio page was created for demonstration of my works. It is a webpage c
 
 ## Screenshot
 
-![alt text](./assets/images/Screenshot.PNG)
+![Screenshot](./assets/images/Screenshot.PNG)
 
 ## Usage
 

@@ -1,0 +1,42 @@
+:root {
+    --akaroa: #D9C7B6;
+    --cloud-burst: #212853;
+}
+
+* {
+    padding: 12px;
+    color: var(--cloud-burst);
+    /* background-color: var(--akaroa); */
+
+}
+
+header {
+    display: flex;
+    background-color: var(--akaroa);
+    color: var(--cloud-burst);
+    justify-content: space-between;
+    /* padding: 12px; */
+}
+
+h1 {
+    line-height: 1.6;
+}
+
+a {
+
+}
+
+nav {
+    margin-top: 25px;
+    justify-content: end;
+}
+
+main {
+    /* width: 100%; */
+    padding: 0;
+
+}
+section {
+    margin-top: 12px;
+    background-color: var(--akaroa);
+}
