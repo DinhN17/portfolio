@@ -7,6 +7,8 @@
     padding: 12px;
     color: var(--cloud-burst);
     /* background-color: var(--akaroa); */
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
 
 }
 
@@ -18,8 +20,15 @@ header {
     /* padding: 12px; */
 }
 
-h1 {
+h1, h2 {
     line-height: 1.6;
+}
+
+h2 {
+    width: 12%;
+    display: inline-flexbox;
+    text-align: end;
+    border-right: solid var(--cloud-burst);
 }
 
 a {
