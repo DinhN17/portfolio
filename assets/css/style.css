@@ -12,7 +12,7 @@
     /* background-color: var(--akaroa); */
     font-family: Arial, Helvetica, sans-serif;
     flex-wrap: wrap;
-
+    border-radius: 7px;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 }
 
 .main-image {
-    background: var(--akaroa);
+    background: var(--cloud-burst);
     overflow: hidden;
     padding: 0;
 }
@@ -50,6 +50,7 @@ h2 {
     display: inline-flexbox;
     text-align: end;
     border-right: solid var(--cloud-burst);
+    border-radius: 0;
 }
 
 a {
