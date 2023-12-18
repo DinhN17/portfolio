@@ -1,6 +1,7 @@
 :root {
     --akaroa: #D9C7B6;
     --cloud-burst: #212853;
+    --orange: #ff7c00;
 }
 
 * {
@@ -14,14 +15,18 @@
 
 header {
     display: flex;
-    background-color: var(--akaroa);
-    color: var(--cloud-burst);
+    background-color: var(--cloud-burst);
+    color: var(--akaroa);
     justify-content: space-between;
     /* padding: 12px; */
 }
 
 h1, h2 {
     line-height: 1.6;
+}
+
+h1 {
+    color: white;
 }
 
 h2 {
@@ -32,7 +37,11 @@ h2 {
 }
 
 a {
+    color: var(--akaroa);
+}
 
+a:hover {
+    text-shadow: 3px 3px 5px var(--orange);
 }
 
 nav {
