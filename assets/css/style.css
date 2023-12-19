@@ -116,14 +116,17 @@ main {
     padding: 0;
 
 }
-@media all and (min-width: 600px) {
-    h2
+@media all and (min-width: 360px) {
+    h2 {display: none;}
+    .main-content {
+        padding: 0;
+    }
+    section {padding: 0;}
+    /* header {flex-direction: column}; */
 }
   
-  @media all and (min-width: 800px) {
-    .main    { flex: 3 0px; }
-    .aside-1 { order: 1; } 
-    .main    { order: 2; }
-    .aside-2 { order: 3; }
-    .footer  { order: 4; }
-  }
+@media all and (min-width: 768px) {
+    h2 {display: unset;}
+    section {padding: 12px;}
+    /* header {flex-direction: row}; */
+}
