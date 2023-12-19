@@ -18,13 +18,14 @@
 header {
     display: flex;
     background-color: var(--cloud-burst);
-    color: var(--akaroa);
+    /* color: var(--akaroa); */
     justify-content: space-between;
     padding: 12px;
     flex-wrap: wrap;
 }
 
 .main-image {
+    position: relative;
     background: var(--cloud-burst);
     overflow: hidden;
     padding: 0;
@@ -36,6 +37,15 @@ img {
     opacity: 0.7;
     width: 100%;
     max-height: 200px;
+}
+
+.title {
+    color: var(--akaroa);
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-weight: bold;
+    /* transform: translate(-50%, -50%); */
 }
 
 h1, h2 {
@@ -58,6 +68,7 @@ h2 {
 section {
     margin-top: 12px;
     background-color: var(--akaroa);
+    color: var(--cloud-burst);
     display: flex;
 }
 .main-content {
@@ -86,7 +97,7 @@ section {
 }
 
 a {
-    color: var(--cloud-burst);
+    color: inherit;
     font-weight: bold;
 }
 
@@ -97,6 +108,7 @@ a:hover {
 nav {
     margin-top: 25px;
     justify-content: end;
+    color: var(--akaroa);
 }
 
 main {
