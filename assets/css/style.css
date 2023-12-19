@@ -86,7 +86,8 @@ section {
 }
 
 a {
-    color: var(--akaroa);
+    color: var(--cloud-burst);
+    font-weight: bold;
 }
 
 a:hover {
