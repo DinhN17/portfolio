@@ -56,6 +56,28 @@ h1 {
     color: whitesmoke;
 }
 
+/* h1::before {
+    content: url(../images/600x400.png);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--akaroa);
+} */
+
+.avatar {
+    display: inline-flex;
+    align-items: center;
+}
+
+.avatar img {
+    vertical-align: middle;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: var(--akaroa);
+}
+
 h2 {
     min-width: 102px;
     text-align: end;
@@ -79,6 +101,7 @@ section {
 }
 
 .card {
+    /* position: relative; */
     border-style: solid;
     border-width: 1px;
     border-radius: var(--borderRadius);
@@ -89,12 +112,24 @@ section {
     /* order: 1; */
 }
 
+.card img {
+    margin-top: 12px;
+}
+
 .card:nth-child(1) {
     flex: 4 1 620px;
     max-width: unset;
     /* align-self: flex-start; */
     /* order: 0; */
 }
+
+/* .card-title {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    color: var(--cloud-burst);
+    font-weight: bold;
+} */
 
 a {
     color: inherit;
@@ -106,8 +141,8 @@ a:hover {
 }
 
 nav {
-    margin-top: 25px;
-    justify-content: end;
+    margin-top: 50px;
+    /* justify-content: end; */
     color: var(--akaroa);
 }
 
@@ -122,9 +157,15 @@ main {
         padding: 0;
     }
     section {padding: 0;}
+    nav {
+        margin-top: 0;
+    }
 }
   
 @media all and (min-width: 768px) {
     h2 {display: unset;}
     section {padding: 12px;}
+    nav {
+        margin-top: 50px;
+    }
 }
