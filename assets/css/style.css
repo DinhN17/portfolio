@@ -122,11 +122,9 @@ main {
         padding: 0;
     }
     section {padding: 0;}
-    /* header {flex-direction: column}; */
 }
   
 @media all and (min-width: 768px) {
     h2 {display: unset;}
     section {padding: 12px;}
-    /* header {flex-direction: row}; */
 }
