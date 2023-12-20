@@ -31,6 +31,11 @@ header {
     padding: 0;
 }
 
+.main-image p {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
 img {
     object-fit: cover;
     padding: 0;
@@ -151,6 +156,39 @@ main {
     padding: 0;
 
 }
+
+<!-- Icons sourced from fontawesome.com and w3schools.com -->
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: var(--akaroa);
+  }
+
+  .fa-github {
+    background: var(--akaroa);
+    color: var(--cloud-burst);
+    font-size: 48px;
+  }
+
+  .fa-envelope-o {
+    background: var(--cloud-burst);
+    color: var(--akaroa);
+    font-size: 48px;
+  }  
+
 @media all and (min-width: 360px) {
     h2 {display: none;}
     .main-content {
