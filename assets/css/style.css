@@ -22,6 +22,13 @@ header {
     flex-wrap: wrap;
 }
 
+footer,section {
+    display: flex;
+    margin-top: 12px;
+    background-color: var(--akaroa);
+    color: var(--cloud-burst);
+}
+
 .main-image {
     position: relative;
     background: var(--cloud-burst);
@@ -79,13 +86,6 @@ h2 {
     text-align: end;
     border-right: solid var(--cloud-burst);
     border-radius: 0;
-}
-
-section {
-    margin-top: 12px;
-    background-color: var(--akaroa);
-    color: var(--cloud-burst);
-    display: flex;
 }
 
 .main-content {
@@ -156,38 +156,31 @@ main {
   .fa-github {
     background: var(--akaroa);
     color: var(--cloud-burst);
-    font-size: 48px;
   }
 
   .fa-envelope-o {
     background: var(--cloud-burst);
     color: var(--akaroa);
-    font-size: 48px;
   }  
 
 @media all and (min-width: 360px) {
+    * {padding: 8px;}
     h2 {
         display: none;
-    };
-    .main-content {
-        padding: 0;
-    };
-    section {
-        padding: 0;
     }
     nav {
         margin-top: 0;
-    };
+        font-size: small;
+    }
 }
   
 @media all and (min-width: 768px) {
+    * {padding: 12px;}
     h2 {
         display: unset;
-    };
-    section {
-        padding: 12px;
-    };
+    }
     nav {
         margin-top: 50px;
-    };
+        font-size: medium;
+    }
 }
