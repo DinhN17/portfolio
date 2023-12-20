@@ -10,7 +10,6 @@
 * {
     padding: 12px;
     color: var(--cloud-burst);
-    /* background-color: var(--akaroa); */
     font-family: Arial, Helvetica, sans-serif;
     border-radius: var(--borderRadius);
 }
@@ -18,7 +17,6 @@
 header {
     display: flex;
     background-color: var(--cloud-burst);
-    /* color: var(--akaroa); */
     justify-content: space-between;
     padding: 12px;
     flex-wrap: wrap;
@@ -39,18 +37,20 @@ header {
 img {
     object-fit: cover;
     padding: 0;
-    opacity: 0.7;
+    opacity: 1.7;
     width: 100%;
     max-height: 200px;
 }
 
+/* Subtitle on the right bottom of the main img */
 .title {
-    color: var(--akaroa);
+    color: var(--cloud-burst);
     position: absolute;
-    bottom: 1%;
-    right: 1%;
+    align-self: center;
+    /* bottom: 1%;
+    right: 1%; */
+    left: 21%;
     font-weight: bold;
-    /* transform: translate(-50%, -50%); */
 }
 
 h1, h2 {
@@ -60,15 +60,6 @@ h1, h2 {
 h1 {
     color: whitesmoke;
 }
-
-/* h1::before {
-    content: url(../images/600x400.png);
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--akaroa);
-} */
 
 .avatar {
     display: inline-flex;
@@ -88,8 +79,6 @@ h2 {
     text-align: end;
     border-right: solid var(--cloud-burst);
     border-radius: 0;
-    /* justify-content: center; */
-    /* align-self: flex-start; */
 }
 
 section {
@@ -98,15 +87,15 @@ section {
     color: var(--cloud-burst);
     display: flex;
 }
+
 .main-content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* align-items: flex-end; */
 }
 
+/* class card is used for each work item */
 .card {
-    /* position: relative; */
     border-style: solid;
     border-width: 1px;
     border-radius: var(--borderRadius);
@@ -114,27 +103,17 @@ section {
     box-shadow: 10px 10px 5px var(--cloud-burst);
     margin: 10px;
     max-width: 610px;
-    /* order: 1; */
 }
 
 .card img {
     margin-top: 12px;
 }
 
+/* make the first card biggest */
 .card:nth-child(1) {
     flex: 4 1 620px;
     max-width: unset;
-    /* align-self: flex-start; */
-    /* order: 0; */
 }
-
-/* .card-title {
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    color: var(--cloud-burst);
-    font-weight: bold;
-} */
 
 a {
     color: inherit;
@@ -147,14 +126,11 @@ a:hover {
 
 nav {
     margin-top: 50px;
-    /* justify-content: end; */
     color: var(--akaroa);
 }
 
 main {
-    /* width: 100%; */
     padding: 0;
-
 }
 
 <!-- Icons sourced from fontawesome.com and w3schools.com -->
@@ -190,20 +166,28 @@ main {
   }  
 
 @media all and (min-width: 360px) {
-    h2 {display: none;}
+    h2 {
+        display: none;
+    };
     .main-content {
         padding: 0;
+    };
+    section {
+        padding: 0;
     }
-    section {padding: 0;}
     nav {
         margin-top: 0;
-    }
+    };
 }
   
 @media all and (min-width: 768px) {
-    h2 {display: unset;}
-    section {padding: 12px;}
+    h2 {
+        display: unset;
+    };
+    section {
+        padding: 12px;
+    };
     nav {
         margin-top: 50px;
-    }
+    };
 }
