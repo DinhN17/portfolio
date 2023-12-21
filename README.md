@@ -14,7 +14,7 @@ To view this webpage please follow the link https://dinhn17.github.io/portfolio/
 
 ## Credits
 
-N/A
+This webpage uses the css and icons to display icons in contact part for email, Github and Linkedin from fontawesome.com and w3schools.com. They are in index.html and style.css.
 
 ## License
 
