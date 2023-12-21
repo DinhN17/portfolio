@@ -4,9 +4,10 @@
     --cloud-burst: #212853;
     --orange: #ff7c00;
     --gin: #e0eae4;
-    --borderRadius: 7px;
+    --borderRadius: 5px;
 }
 
+/* Make a default for padding, border-radius, text color */
 * {
     padding: 12px;
     color: var(--cloud-burst);
@@ -54,8 +55,6 @@ img {
     color: var(--cloud-burst);
     position: absolute;
     align-self: center;
-    /* bottom: 1%;
-    right: 1%; */
     left: 21%;
     font-weight: bold;
 }
@@ -102,18 +101,17 @@ h2 {
     flex: 1 1 300px;
     box-shadow: 10px 10px 5px var(--cloud-burst);
     margin: 10px;
-    /* max-width: 610px; */
 }
 .card img {
     margin-top: 12px;
+    opacity: 0.7;
 }
 /* make the first card biggest */
 .card:nth-child(1) {
-    flex: 4 1 620px;
-    /* max-width: unset; */
+    flex: 2 1 620px;
 }
+/* stop last card uses all the width */
 .card:last-child {
-    /* flex: 4 1 620px; */
     max-width: 610px;
 }
 
@@ -141,7 +139,10 @@ main {
     flex: 1 1 300px;
     box-shadow: 10px 10px 5px var(--cloud-burst);
     margin: 22px;
-    /* padding: 12px; */
+}
+
+ul {
+    margin-left: 11px;
 }
 <!-- Icons sourced from fontawesome.com and w3schools.com -->
 .fa {
